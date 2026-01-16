@@ -1,0 +1,138 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  background: linear-gradient(135deg, #ff758c, #ff7eb3);
+  color: #333;
+  text-align: center;
+}
+
+/* Navbar */
+.navbar {
+  background: rgba(255,255,255,0.2);
+  padding: 25px 10px;
+  backdrop-filter: blur(10px);
+}
+
+.navbar h1 {
+  font-size: 2.5em;
+  color: #fff;
+  text-shadow: 0 2px 8px rgba(0,0,0,0.3);
+  margin-bottom: 5px;
+}
+
+.tagline {
+  color: #ffe6ea;
+  font-weight: 500;
+}
+
+/* Stats Bar */
+.stats {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 25px 0;
+  gap: 20px;
+}
+
+.stat-card {
+  background: white;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+  width: 150px;
+  padding: 15px;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+.stat-card h2 {
+  color: #ff2d55;
+  margin: 0;
+  font-size: 2em;
+}
+
+/* Cards */
+.card {
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 400px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}
+
+h2 {
+  color: #ff2d55;
+  margin-bottom: 15px;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 8px 0;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-size: 1em;
+  transition: 0.3s;
+}
+
+input:focus {
+  border-color: #ff2d55;
+  box-shadow: 0 0 10px rgba(255,45,85,0.5);
+  outline: none;
+}
+
+button {
+  padding: 12px 25px;
+  background: linear-gradient(90deg, #ff6a00, #ee0979);
+  color: #fff;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  margin-top: 10px;
+  transition: 0.3s;
+}
+
+button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(255,60,120,0.7);
+}
+
+/* Emergency Request */
+.request-card .request {
+  background: #ffe6ea;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  color: #333;
+}
+
+.highlight {
+  color: #ff2d55;
+  font-weight: 700;
+}
+
+footer {
+  margin-top: 30px;
+  color: white;
+  padding: 10px;
+  background: rgba(0,0,0,0.1);
+}
+
+/* Responsive */
+@media(max-width: 600px) {
+  .stats {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
