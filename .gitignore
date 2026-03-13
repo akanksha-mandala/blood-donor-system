@@ -1,10 +1,22 @@
 # Python
 backend/env/
+backend/.venv/
 backend/__pycache__/
+**/__pycache__/
 *.pyc
 
 # Secrets
 backend/.env
+.env
+
+# Uploads / local files
+backend/uploads/
+uploads/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
 
 # Node
 frontend/node_modules/
